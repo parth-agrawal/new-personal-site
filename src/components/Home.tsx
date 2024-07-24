@@ -1,6 +1,4 @@
-import { Divider } from "./divider";
 import { FullFolder } from "./FullFolder";
-import { Navbar } from "./Navbar";
 
 export const Home = () => {
   return (
