@@ -8,12 +8,12 @@ type NavbarLinkData = {
 
 const navbarLinks: NavbarLinkData[] = [
   {
-    name: "Parth Agrawal",
+    name: "parth agrawal",
     path: "/",
     color: "#DDDDDD",
   },
   {
-    name: "Portfolio",
+    name: "portfolio",
     path: "/portfolio",
     color: "#FFAFAF",
   },
@@ -22,7 +22,7 @@ const navbarLinks: NavbarLinkData[] = [
 export const Navbar = () => {
   return (
     <>
-      <div className="flex flex-row">
+      <div className="flex flex-row gap-4">
         {navbarLinks.map((link) => (
           <NavbarLink
             key={link.name}
@@ -42,7 +42,7 @@ const NavbarLink = ({ name, path, color }: NavbarLinkData) => {
       <Link to={path}>
         <div
           style={{ backgroundColor: color }}
-          className={`px-4 mx-2 py-2 text-md font-bold`}
+          className={`px-4 py-2 text-md `}
         >
           {name}
         </div>
