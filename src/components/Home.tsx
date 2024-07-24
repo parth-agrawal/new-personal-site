@@ -7,7 +7,7 @@ const pageContent = {
   subFaceContent: "I'm a sub folder",
 }
 
-const Subpage = () => {
+const HomeSubpage = () => {
   return <div className="flex flex-row gap-10">
     <div className="w-1/2">
       <img src="me-cropped.jpeg" className="" />
@@ -24,8 +24,8 @@ export const Home = () => {
     <>
       <div className="bg-[#B1AFFF]">
         <FolderLayout>
-          "Hi, I'm Parth. I build, write, and create."
-          <Subpage />
+          Hi, I'm Parth. I build, write, and create.
+          <HomeSubpage />
         </FolderLayout>
       </div>
     </>

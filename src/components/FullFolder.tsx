@@ -26,7 +26,7 @@ export const FolderLayout = ({ children }: FolderLayoutProps) => {
         </div>
 
         <Divider />
-        <div className="flex justify-center items-center min-h-[500px] bg-[#FFF7AF] px-10">
+        <div className="flex justify-center items-center min-h-[500px] bg-[#FFF7AF] px-10 py-20">
           {subcontent}
         </div>
       </div>
