@@ -6,7 +6,8 @@
   "description": "",
   "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx prisma generate && docker compose up && bun server.ts"
   },
   "dependencies": {
     "@prisma/client": "^5.17.0",
