@@ -1,10 +1,11 @@
+import { Divider } from "./Divider";
 import { Navbar } from "./Navbar";
 
 interface MainFaceProps {
   content: string;
 }
 
-export const MainFace = ({ content }: MainFaceProps) => {
+export const FullFolder = ({ content }: MainFaceProps) => {
   return (
     <>
       <div className="flex flex-col py-48 px-12 font-mono">
@@ -14,6 +15,7 @@ export const MainFace = ({ content }: MainFaceProps) => {
             {content}
           </div>
         </div>
+        <Divider />
       </div>
     </>
   );
