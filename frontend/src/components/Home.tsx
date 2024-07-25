@@ -5,7 +5,7 @@ import { FolderLayout } from "./FullFolder";
 
 const HomeSubpage = () => {
   return <div className="flex flex-row gap-10">
-    <div className="w-1/2">
+    <div className="w-96">
       <img src="me-cropped.jpeg" className="" />
     </div>
     <div className="w-1/2 text-sm">
@@ -18,7 +18,7 @@ export const Home = () => {
   return (
     // move navbar to a layout component
     <>
-      <div className="bg-[#B1AFFF]">
+      <div className="bg-[#B1AFFF] flex justify-center">
         <FolderLayout>
           Hi, I'm Parth. I build, write, and create.
           <HomeSubpage />
