@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Generative Art Feed",
-    "description": "Create and share your generative art!.",
+    "description": "Create and share your generative art!",
     "image": "monalisa.jpg",
     "url": "https://endlessforms.vercel.app",
     "github":"https://github.com/parth-agrawal/gen-art-feed"
@@ -17,10 +17,18 @@
   },
   {
     "id": "3",
-    "title": "Project Three",
-    "description": "This is the third project.",
-    "image": "https://example.com/image3.jpg",
-    "url": "https://example.com/project1",
+    "title": "Tic Tac Toe",
+    "description": "A classic.",
+    "image": "chess.jpeg",
+    "url": "https://parth-tic-tac-toe.netlify.app",
     "github":""
+  },
+  {
+    "id": "4",
+    "title": "Touch God",
+    "description": "A twist on the old serpentine pastime.",
+    "image": "adam.jpg",
+    "url": "https://touch-god.netlify.app",
+    "github":"https://github.com/fractal-bootcamp/parthagrawal.snake-game"
   }
 ]
