@@ -10,13 +10,18 @@ type Project = {
 }
 
 
-const getPortfolioEntries = async () => {
-  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
-  const targetUrl = `${BACKEND_URL}/api/project/all`
-  const response = await fetch(targetUrl)
-  return response;
-
+const getPortfolioEntries = async (): Promise<Project[]> => {
+  const response = await import('../data/projects.json');
+  const data = await response.default;
+  return data
 }
+// const getPortfolioEntries = async () => {
+//   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+//   const targetUrl = `${BACKEND_URL}/api/project/all`
+//   const response = await fetch(targetUrl)
+//   return response;
+
+// }
 
 const PortfolioSubpage = () => {
 
@@ -24,8 +29,7 @@ const PortfolioSubpage = () => {
 
   useEffect(() => {
     const fetchProjects = async () => {
-      const response = await getPortfolioEntries();
-      const data = await response.json()
+      const data = await getPortfolioEntries();
       setProjects(data);
     };
     fetchProjects();
@@ -62,7 +66,7 @@ const PortfolioEntry = ({ project }: { project: Project }) => {
 
 export const Portfolio = () => {
   return (
-    <div className="bg-[#B1AFFF]">
+    <div className="flex bg-[#B1AFFF] justify-center">
       <FolderLayout>
         Portfolio
         <PortfolioSubpage />
