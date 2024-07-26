@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'BadScript-Regular';
+    src: local('BadScript'), url('./assets/BadScript-Regular.ttf') format('truetype');
+}

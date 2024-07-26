@@ -1,23 +1,26 @@
 [
   {
     "id": "1",
-    "title": "Project One",
-    "description": "This is the first project.",
-    "image": "https://example.com/image1.jpg",
-    "url": "https://example.com/project1"
+    "title": "Generative Art Feed",
+    "description": "Create and share your generative art!.",
+    "image": "monalisa.jpg",
+    "url": "https://endlessforms.vercel.app",
+    "github":"https://github.com/parth-agrawal/gen-art-feed"
   },
   {
     "id": "2",
-    "title": "Project Two",
-    "description": "This is the second project.",
-    "image": "https://example.com/image2.jpg",
-    "url": "https://example.com/project2"
+    "title": "Algorithm Visualizer",
+    "description": "Visualizations of various sorting algorithms.",
+    "image": "lines.png",
+    "url": "https://github.com/fractal-bootcamp/parthagrawal.algorithms",
+    "github":"https://parths-algorithms.netlify.app/algorithms"
   },
   {
     "id": "3",
     "title": "Project Three",
     "description": "This is the third project.",
     "image": "https://example.com/image3.jpg",
-    "url": "https://example.com/project3"
+    "url": "https://example.com/project1",
+    "github":""
   }
 ]
