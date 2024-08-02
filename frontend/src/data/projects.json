@@ -1,11 +1,21 @@
 [
   {
+    "id": "0",
+    "title": "iyana.ai",
+    "description": "break her out",
+    "image": "iyana.jpeg",
+    "url": "https://iyanaai.netlify.app",
+    "github":"https://github.com/parth-agrawal/infinite-games-escape/",
+    "twitter_thread":"https://x.com/mr_samosaman/status/1818084827460944108"
+  },
+  {
     "id": "1",
     "title": "Generative Art Feed",
     "description": "Create and share your generative art!",
     "image": "monalisa.jpg",
     "url": "https://endlessforms.vercel.app",
-    "github":"https://github.com/parth-agrawal/gen-art-feed"
+    "github":"https://github.com/parth-agrawal/gen-art-feed",
+    "twitter_thread":"https://x.com/mr_samosaman/status/1807922045348405429"
   },
   {
     "id": "2",
@@ -13,7 +23,9 @@
     "description": "Visualizations of various sorting algorithms.",
     "image": "lines.png",
     "url": "https://github.com/fractal-bootcamp/parthagrawal.algorithms",
-    "github":"https://parths-algorithms.netlify.app/algorithms"
+    "github":"https://parths-algorithms.netlify.app/algorithms",
+    "twitter_thread":""
+
   },
   {
     "id": "3",
@@ -21,7 +33,9 @@
     "description": "A classic.",
     "image": "chess.jpeg",
     "url": "https://parth-tic-tac-toe.netlify.app",
-    "github":""
+    "github":"https://github.com/fractal-bootcamp/parthagrawal.tictactoe",    
+    "twitter_thread":"https://x.com/mr_samosaman/status/1800979164717252669"
+
   },
   {
     "id": "4",
@@ -29,6 +43,7 @@
     "description": "A twist on the old serpentine pastime.",
     "image": "adam.jpg",
     "url": "https://touch-god.netlify.app",
-    "github":"https://github.com/fractal-bootcamp/parthagrawal.snake-game"
+    "github":"https://github.com/fractal-bootcamp/parthagrawal.snake-game",
+    "twitter_thread":"https://x.com/mr_samosaman/status/1801461847771480076"
   }
 ]
