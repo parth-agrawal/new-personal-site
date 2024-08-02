@@ -8,6 +8,7 @@ type Project = {
   image: string,
   url: string,
   github: string,
+  twitter_thread: string,
 }
 
 
@@ -41,9 +42,9 @@ const PortfolioSubpage = () => {
 
   return (
     <>
-      <div className="flex flex-wrap w-full justify-around gap-20">
+      <div className="flex flex-wrap w-full justify-around gap-5">
         {projects && projects.map((project, index) => (
-          <div className="w-84 p-2" key={index}>
+          <div className="p-2" key={index}>
             <PortfolioEntry project={project} />
           </div>
         ))}
@@ -55,26 +56,43 @@ const PortfolioSubpage = () => {
 }
 
 const PortfolioEntry = ({ project }: { project: Project }) => {
-  const { title, description, image, url, github } = project;
+  const { title, description, image, url, github, twitter_thread } = project;
   return (
-    <div className="flex gap-2 flex-col bg-[#FFAFD5] p-12 items-center justify-center">
-      <div className="flex  w-full h-auto justify-center">
-        <img className="border flex min-w-24 max-h-48" src={image} />
+    <div className="flex gap-2 flex-col bg-[#FFAFD5] border-[20px] border-[#FFF7AF]/[0.5] px-2 py-6 items-center justify-center w-100 h-">
+
+      <div className="flex w-full h-auto justify-center">
+        <img className="border flex min-w-8 max-w-[10em] max-h-48" src={image} />
       </div>
-      <div className="pt-2 text-2xl font-BadScript">
+      <div className="pt-2 text-xl font-BadScript">
 
         {title}
       </div>
-      <div className="text-lg font-BadScript">
+      <div className="text-md font-BadScript">
         {description}
       </div>
-      <div className="flex flex-col">
-        <a href={url} className="underline hover:text-[#B1AFFF]">Visit</a>
-        <a href={github} className="underline hover:text-[#B1AFFF]">Github</a>
-      </div>
+      {twitter_thread &&
+        <div className="flex flex-row gap-1">
+          <div>(</div>
+          <a href={url} className="underline hover:text-[#B1AFFF]">link</a>
+          <div>|</div>
+          <a href={github} className="underline hover:text-[#B1AFFF]">github</a>
+          <div>|</div>
+          <a href={twitter_thread} className="underline hover:text-[#B1AFFF]">devlog</a>
+          <div>)</div>
+        </div>}
 
-
+      {!twitter_thread &&
+        <div className="flex flex-row gap-1">
+          <div>(</div>
+          <a href={url} className="underline hover:text-[#B1AFFF]">link</a>
+          <div>|</div>
+          <a href={github} className="underline hover:text-[#B1AFFF]">github</a>
+          <div>)</div>
+        </div>
+      }
     </div>
+
+
   )
 }
 
